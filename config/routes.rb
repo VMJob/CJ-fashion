@@ -3,9 +3,10 @@ Rails.application.routes.draw do
   resources :selection, only: [:show]
   get 'pages/index'
   root 'pages#index'
-   resources :styles, only: [:new, :create, :show] do
-    resources :styles, only: [:new, :create]
-  end
+   namespace :page do
+    resources :styles, only: [:new, :create, :show]
+      resources :styles, only: [:new, :create]
+    end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
  #get 'pages/about'

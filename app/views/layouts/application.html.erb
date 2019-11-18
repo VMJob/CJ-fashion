@@ -14,9 +14,21 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <%= link_to 'CJ Fashion House', root_path, class: 'navbar-brand' %>
-    <%= yield %>
+      <div class="container">
+       <b>Administrator</b>
+      <br />
+      <%= link_to 'Elegant Styles', new_page_style_path %>
+      </div>
+</div>  
 
-    
+    </nav>
+       <% if notice.present? %>
+          <p class="alert alert-info"><%= notice %></p>
+        <% end %>
+        <% if alert.present? %>
+          <p class="alert alert-danger"><%= alert %></p>
+        <% end %>
+       <%= yield %>   
 
     <div id="footer">
       <div class="container">
@@ -25,26 +37,21 @@
        
       </div>
       <div class="col-12 col-sm-3">
-        <b>About</b>
-        <br />
-        <%= link_to 'Team', '#' %>
-        <br />
-        <%= link_to 'Careers', '#' %>
+        <%= link_to 'About', '#' %>
         <br />
         <%= link_to 'Privacy Policy', '#' %>
       </div>
       <div class="col-12 col-sm-3">
         <b>Contact</b>
         <br />
-        my@email.com
+        CJfashionhouse@gmail.com
         <br />
-        One Kendall Square
+        204 Anderson Square
         <br />
-        Cambridge MA, 02113
+        Austin, TX 78753
       </div>
       <div class="col-12 col-sm-3">
         <b>Social</b>
-         <br />
          <br />
           <%= link_to 'https://github.com/bigvee-design' do %>
             <span class="fa fa-github-square fa-2x social-button"></span>
