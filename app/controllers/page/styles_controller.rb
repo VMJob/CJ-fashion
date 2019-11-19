@@ -1,7 +1,7 @@
 class Page::StylesController < ApplicationController
 	before_action :authenticate_user!
    def new
-   @syle = Style.new
+   @style = Style.new
    end
 
    def create

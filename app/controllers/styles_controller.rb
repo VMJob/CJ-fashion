@@ -2,6 +2,7 @@ class StylesController < ApplicationController
    before_action :authenticate_user!
    def new
    	@style = Style.new
+   end
 
    def index
    end

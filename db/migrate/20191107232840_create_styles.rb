@@ -5,10 +5,10 @@ class CreateStyles < ActiveRecord::Migration[5.2]
       t.integer :user_id
       t.decimal :cost
       t.integer :page_id
-      t.integer :selection_id
+      t.integer :selection
+      t.integer :measurement
       t.timestamps
     end
-    add_index :styles, [:user_id, :page_id]
-    add_index :styles, :page_id 
+    add_index :styles, :user_id
   end
 end

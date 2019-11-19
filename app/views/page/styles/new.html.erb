@@ -1,10 +1,9 @@
 <br />
 <div class="booyah-box col-10 offset-1">
   <h1>Add a new style</h1>
-  <%= simple_form_for @style, url: page_style_path do |f| %>
-    <%= f.input :style %>
+  <%= simple_form_for @style, url: page_styles_path do |f| %>
+    <%= f.input :selection %>
     <%= f.input :measurement %>
-    <%= f.input :cost %>
     <br />
     <%= f.submit "Create", class: 'btn btn-primary' %>
     <br />
