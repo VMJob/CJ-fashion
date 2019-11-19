@@ -3,10 +3,8 @@ class CreateStyles < ActiveRecord::Migration[5.2]
     create_table :styles do |t|
       t.text :message
       t.integer :user_id
-      t.decimal :cost
-      t.integer :page_id
-      t.integer :selection
-      t.integer :measurement
+      t.text :selection
+      t.text :measurement
       t.timestamps
     end
     add_index :styles, :user_id

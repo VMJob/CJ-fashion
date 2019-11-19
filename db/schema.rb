@@ -16,20 +16,26 @@ ActiveRecord::Schema.define(version: 2019_11_18_042217) do
   enable_extension "plpgsql"
 
   create_table "selections", force: :cascade do |t|
+    t.string "type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "styles", force: :cascade do |t|
+    t.text "message"
     t.integer "user_id"
+    t.decimal "cost"
     t.integer "page_id"
+    t.integer "selection"
+    t.integer "measurement"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["page_id"], name: "index_styles_on_page_id"
-    t.index ["user_id", "page_id"], name: "index_styles_on_user_id_and_page_id"
+    t.index ["user_id"], name: "index_styles_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
+    t.string "styles"
+    t.string "type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email", default: "", null: false
