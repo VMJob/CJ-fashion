@@ -14,12 +14,6 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <%= link_to 'CJ Fashion House', root_path, class: 'navbar-brand' %>
-      <div class="container">
-       <b>Administrator</b>
-      <br />
-      <%= link_to 'Elegant Styles', new_page_style_path %>
-      </div>
-</div>  
 
     </nav>
        <% if notice.present? %>
@@ -28,12 +22,18 @@
         <% if alert.present? %>
           <p class="alert alert-danger"><%= alert %></p>
         <% end %>
-       <%= yield %>   
+       <%= yield %> 
 
     <div id="footer">
       <div class="container">
       <div class="row">
       <div class="col-12 col-sm-3">
+
+      <div class="container">
+       <b>Administrator</b>
+      <br />
+      <%= link_to 'Elegant Styles', new_page_style_path %>
+      </div>    
        
       </div>
       <div class="col-12 col-sm-3">

@@ -1,11 +1,10 @@
 class StylesController < ApplicationController
-   
+   before_action :authenticate_user!
    def new
    	@style = Style.new
 
    def index
-   	
-   end	
+   end
 
    def create
     @style = Style.create(style_params)

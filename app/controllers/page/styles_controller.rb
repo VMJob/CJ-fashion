@@ -9,9 +9,12 @@ class Page::StylesController < ApplicationController
     redirect_to page_style_path(@style)
   end
 
+ 
+
   def show
     @style = Style.find(params[:id])
   end
+
 
   private
 

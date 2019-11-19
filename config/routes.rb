@@ -6,6 +6,7 @@ Rails.application.routes.draw do
    namespace :page do
     resources :styles, only: [:new, :create, :show]
       resources :styles, only: [:new, :create]
+       resources :pages, only: [:new, :create]
     end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
