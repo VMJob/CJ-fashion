@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :selection, only: [:show]
+  resources :measurement, only: [:show] 
   get 'pages/index'
   root 'pages#index'
    namespace :page do
