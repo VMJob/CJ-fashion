@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_19_233108) do
+ActiveRecord::Schema.define(version: 2019_11_23_192127) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,6 +18,9 @@ ActiveRecord::Schema.define(version: 2019_11_19_233108) do
   create_table "measurements", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "waist"
+    t.float "length"
+    t.float "sleeve"
   end
 
   create_table "selections", force: :cascade do |t|
