@@ -17,4 +17,3 @@ class StylesController < ApplicationController
   end
   
 end
-end
