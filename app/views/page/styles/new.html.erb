@@ -1,14 +1,13 @@
 <br />
 <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 card form">
   <h1>Add Your Style</h1>
+  
   <%= simple_form_for @style, url: page_styles_path do |f| %>
     <%= f.input :selection %>
     <%= f.input :measurement %>
     <br />
     <%= f.submit "Add Your Style", class: 'btn btn-primary' %>
-    <br />
-  <% end %>
-  <br />
+   <% end %>
 </div>
  
 
