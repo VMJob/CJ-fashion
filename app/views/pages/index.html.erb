@@ -1,18 +1,40 @@
-<div class="hero">
-	<br />
-	<div class="row feature text-center">
-  <div class="frosty col-10 offset-1 text-center">	
-  	<br />
-	 <h1>The best fashion place in ATX</h1>
-	<br />
-	 <p>Come to the Princess Chacha fashion house where ladies look their best. Princess Chacha is a trained designer with so many years of experience under her belt. This is the best place in Austin to make your next elegant outfit without breaking your bank.</p>
-	<br /> 
+<div class = "container">
+      <div class = "row">
+        <div class = "col">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <%= image_tag 'fashion.jpg', class: 'img-fluid' %>
+        
+        <div class="carousel-caption d-none d-md-block">
+          <h3>It Cost a Little to Look Good</h3>
+        </div></div>
+        <div class="carousel-item">
+         <%= image_tag 'fashion5.png', class: 'd-block img-fluid' %>
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Looking for Elegant Styles?</h4>
+        </div>
+        </div>
+        <div class="carousel-item">
+         <%= image_tag 'fashion4.jpg', class: 'd-block img-fluid' %>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Beautiful Simple Styles</h5>
+        </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+     </div>
     </div>
-
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-      <%= image_tag 'fashion.jpg', class: 'img-fluid' %>
-    </div>
-    
+   </div>
+  </div> 
